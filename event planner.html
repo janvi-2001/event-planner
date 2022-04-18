@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/event planner/css/Untitled-1.css" />
+    
+    <title>ProPioneer - We Make A Moment</title>
+  </head>
+  <body>
+    
+    <nav class="navbar background">
+      <ul class="nav-list">
+        <div class="logo">
+          <img src="/event planner/photos/logo.jpg" alt="logo" />
+        </div>
+        <li><a href="#home">Home </a></li>
+        <li><a href="#about us ">About Us </a></li>
+        <li><a href="#contact us ">Contact Us </a></li>
+        <li><a href="#log in ">log In </a></li>
+      </ul>
+      <div class="rightnav">
+        <input type="text" name="search" id="search" />
+        <button class="btn btn-sm">search</button>
+      </div>
+    </nav>
+    <section>
+        <img class="mySlides" src="/event planner/photos/andre-hunter-GX2LN-o_kSk-unsplash.jpg" style="width:100%">
+        <img class="mySlides" src="/event planner/photos/kelsey-chance-ZrhtQyGFG6s-unsplash.jpg" style="width:100%">
+        <img class="mySlides" src="/event planner/photos/al-elmes-ULHxWq8reao-unsplash.jpg" style="width:100%">
+        <img class="mySlides" src="/event planner/photos/samantha-gades-fIHozNWfcvs-unsplash.jpg" style="width:100%">
+          </section>
+      
+          <script>
+            // Automatic Slideshow - change image every 3 seconds
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}
+              x[myIndex-1].style.display = "block";
+              setTimeout(carousel, 3000);
+            }
+            </script>
+            . . .
+            <!--Section 2: About me-->
+            
+                    <div class="column-2">
+                        <h1>About Us</h1>
+                        <p>The future of event plannning is here.</p>
+                        <P> Propioneer is going to be website which is going to help the
+                            individual in making their work easily when it comes to manage an
+                            event. Event management can be a very difficult and full of pressure
+                            task if not done properly. Communication can be the biggest problem
+                            when we work in team. This website is going to be a perfect
+                            destination for people who want to manage their task properly. </P>
+                            <i>ProPioneer.com is a one stop destination for the individuals out there looking forward to plan an amazing event without any dilemma.</i></h2>
+                     </div>
+                         <div class="column-2 large-profile">
+                         </div>
+<section id="contact">
+  
+  <h1 class="section-header">Contact</h1>
+  
+  <div class="contact-wrapper">
+  
+  <!-- Left contact page --> 
+    
+    <form id="contact-form" class="form-horizontal" role="form">
+       
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-12">
+          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
+        </div>
+      </div>
+
+      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
+      
+      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
+        <div class="alt-send-button">
+          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
+        </div>
+      
+      </button>
+      
+    </form>
+    
+  <!-- Left contact page --> 
+    
+      <div class="direct-contact-container">
+
+        <ul class="contact-list">
+          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Dhanbad,Jharkhand</span></i></li>
+          
+          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
+          
+          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">propioneer@gmail.com</a></span></i></li>
+          
+        </ul>
+
+        <hr>
+        <ul class="social-media-list">
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-github" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-codepen" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-twitter" aria-hidden="true"></i></a>
+          </li>
+          <li><a href="#" target="_blank" class="contact-icon">
+            <i class="fa fa-instagram" aria-hidden="true"></i></a>
+          </li>       
+        </ul>
+        <hr>
+
+        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
+
+      </div>
+    
+  </div>
+  
+</section>  
+<script>
+    document.querySelector('#contact-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    e.target.elements.name.value = '';
+    e.target.elements.email.value = '';
+    e.target.elements.message.value = '';
+  });
+
+</script>
+<!-- partial:index.partial.html -->
+<div id="bg"></div>
+
+<div class="login-page">
+  <div class="form">
+    <div class="login">
+      <div class="login-header">
+        <h3>LOGIN</h3>
+        <p>Please enter your credentials to login.</p>
+      </div>
+    </div>
+    <form class="login-form">
+      <input type="text" placeholder="username"/>
+      <input type="password" placeholder="password"/>
+      <button>login</button>
+      <p class="message">Not registered? <a href="#">Create an account</a></p>
+    </form>
+  </div>
+</div>
+ <!-- Second Photo Grid-->
+ <div class="events ">
+ <P><h1>Types Of Events</h1></P>
+
+  <div class="w3-quarter">
+    <img src="/event planner/photos/Pre-Wedding-Events.jpg" alt="Popsicle" style="width:25%">
+    <h3>pre wedding events </h3>
+    
+  </div>
+  <div class="w3-quarter">
+    <img src="/event planner/photos/istockphoto-1160193557-612x612.jpg" alt="Salmon" style="width: 25%">
+    <h3>office events</h3>
+    
+  </div>
+  <div class="w3-quarter">
+    <img src="/event planner/photos/babyshoer.webp" alt="Sandwich" style="width:25%">
+    <h3>Baby showers</h3>
+    
+  </div>
+  <div class="w3-quarter">
+    <img src="/event planner/photos/stress-free-birthdays.webp" alt="Croissant" style="width:25%">
+    <h3>Birthday Celebrations </h3>
+   
+</div>
+<div class="chat-popup" id="myForm">
+  <form action="/action_page.php" class="form-container">
+    <h1>Chat</h1>
+
+    <label for="msg"><b>Message</b></label>
+    <textarea placeholder="Type message.." name="msg" required></textarea>
+
+    <button type="submit" class="btn">Send</button>
+    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+  </form>
+</div>
+
+  </body>
+</html>

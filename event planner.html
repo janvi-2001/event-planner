@@ -7,18 +7,56 @@
     <link rel="stylesheet" href="/event planner/css/Untitled-1.css" />
     
     <title>ProPioneer - We Make A Moment</title>
+
   </head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .row {
+      display: flex;
+    }
+    
+    /* Create three equal columns that sits next to each other */
+    .column {
+      flex: 33.33%;
+      padding: 5px;
+    }
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .row {
+      display: flex;
+    }
+    
+    /* Create three equal columns that sits next to each other */
+    .column {
+      flex: 33.33%;
+      padding: 5px;
+    }
+    </style>
   <body>
     
     <nav class="navbar background">
       <ul class="nav-list">
         <div class="logo">
           <img src="/event planner/photos/logo.jpg" alt="logo" />
+          
         </div>
-        <li><a href="#home">Home </a></li>
-        <li><a href="#about us ">About Us </a></li>
-        <li><a href="#contact us ">Contact Us </a></li>
-        <li><a href="#log in ">log In </a></li>
+        <div><h4 style="color: white;display: flex;align-self: auto;" ><i>Propioneer.com</i></h4></div>
+        <li><a href="features.html">Features </a></li>
+        <li><a href="#aboutus"><nobr>About Us</nobr> </a></li>
+        <li><a href="#services"><nobr>Services</nobr> </a></li>
+        <li><a href="loginPage.html" ><nobr>log In </nobr> </a></li>
       </ul>
       <div class="rightnav">
         <input type="text" name="search" id="search" />
@@ -50,154 +88,327 @@
             }
             </script>
             . . .
-            <!--Section 2: About me-->
-            
-                    <div class="column-2">
-                        <h1>About Us</h1>
-                        <p>The future of event plannning is here.</p>
-                        <P> Propioneer is going to be website which is going to help the
-                            individual in making their work easily when it comes to manage an
-                            event. Event management can be a very difficult and full of pressure
-                            task if not done properly. Communication can be the biggest problem
-                            when we work in team. This website is going to be a perfect
-                            destination for people who want to manage their task properly. </P>
-                            <i>ProPioneer.com is a one stop destination for the individuals out there looking forward to plan an amazing event without any dilemma.</i></h2>
-                     </div>
-                         <div class="column-2 large-profile">
-                         </div>
-<section id="contact">
+<!--Section 2: About me-->
+<table border="0"> 
+  <tr>
+  <td width="50%" id="aboutus">
+    <h1 style="color:white;">About Us</h1>
+		<h3><p>The future of event plannning is here.</p>
+			<P> Propioneer is going to be website which is going to help the
+				individual in making their work easily when it comes to manage an
+				event. Event management can be a very difficult and full of pressure
+				task if not done properly. Communication can be the biggest problem
+				when we work in team. This website is going to be a perfect
+				destination for people who want to manage their task properly. 
+			</P>
+			<i>ProPioneer.com is a one stop destination for the individuals out there looking forward to plan an amazing event without any dilemma.</i>
+	</td></h3>
+  <td width="50%">
+    <div class="column">
+      <img src="/event planner/photos/about-page.webp" alt="Snow" style="width:100%"><p>
+    </div>
   
-  <h1 class="section-header">Contact</h1>
-  
-  <div class="contact-wrapper">
-  
-  <!-- Left contact page --> 
+  </td>
+</tr>
+<tr>
+
+  <td  colspan="2" style="color:white;text-align:center;">
+		
+		<section>
+      <div class="sevices" id="services"></div>
+      <h1 style="color:white;text-align:center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Sevices That Can Be Planned </h1>
+     
     
-    <form id="contact-form" class="form-horizontal" role="form">
-       
-      <div class="form-group">
-        <div class="col-sm-12">
-          <input type="text" class="form-control" id="name" placeholder="NAME" name="name" value="" required>
-        </div>
+    <div class="row">
+      <div class="column">
+        <img src="/event planner/photos/Pre-Wedding-Events.jpg" alt="Snow" style="width:100%"><p><h3 style="color: white;text-align:center;"></style>Pre Wedding Events </h3></p>
       </div>
-
-      <div class="form-group">
-        <div class="col-sm-12">
-          <input type="email" class="form-control" id="email" placeholder="EMAIL" name="email" value="" required>
-        </div>
+      <div class="column">
+        <img src="/event planner/photos/babyshoer.webp" alt="Forest" style="width:90%";><p><h3 style="color: white;text-align:center;"></style>Baby Shower </h3></p>
       </div>
-
-      <textarea class="form-control" rows="10" placeholder="MESSAGE" name="message" required></textarea>
-      
-      <button class="btn btn-primary send-button" id="submit" type="submit" value="SEND">
-        <div class="alt-send-button">
-          <i class="fa fa-paper-plane"></i><span class="send-text">SEND</span>
-        </div>
-      
-      </button>
-      
-    </form>
-    
-  <!-- Left contact page --> 
-    
-      <div class="direct-contact-container">
-
-        <ul class="contact-list">
-          <li class="list-item"><i class="fa fa-map-marker fa-2x"><span class="contact-text place">Dhanbad,Jharkhand</span></i></li>
-          
-          <li class="list-item"><i class="fa fa-phone fa-2x"><span class="contact-text phone"><a href="tel:1-212-555-5555" title="Give me a call">(212) 555-2368</a></span></i></li>
-          
-          <li class="list-item"><i class="fa fa-envelope fa-2x"><span class="contact-text gmail"><a href="mailto:#" title="Send me an email">propioneer@gmail.com</a></span></i></li>
-          
-        </ul>
-
-        <hr>
-        <ul class="social-media-list">
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-github" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-codepen" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-twitter" aria-hidden="true"></i></a>
-          </li>
-          <li><a href="#" target="_blank" class="contact-icon">
-            <i class="fa fa-instagram" aria-hidden="true"></i></a>
-          </li>       
-        </ul>
-        <hr>
-
-        <div class="copyright">&copy; ALL OF THE RIGHTS RESERVED</div>
-
-      </div>
-    
-  </div>
-  
-</section>  
-<script>
-    document.querySelector('#contact-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    e.target.elements.name.value = '';
-    e.target.elements.email.value = '';
-    e.target.elements.message.value = '';
-  });
-
-</script>
-<!-- partial:index.partial.html -->
-<div id="bg"></div>
-
-<div class="login-page">
-  <div class="form">
-    <div class="login">
-      <div class="login-header">
-        <h3>LOGIN</h3>
-        <p>Please enter your credentials to login.</p>
+      <div class="column">
+        <img src="/event planner/photos/stress-free-birthdays.webp" alt="Mountains" style="width:100%"><p><h3 style="color: white;text-align:center;"></style>Birthday Celebration </h3></p>
       </div>
     </div>
-    <form class="login-form">
-      <input type="text" placeholder="username"/>
-      <input type="password" placeholder="password"/>
-      <button>login</button>
-      <p class="message">Not registered? <a href="#">Create an account</a></p>
-    </form>
-  </div>
-</div>
- <!-- Second Photo Grid-->
- <div class="events ">
- <P><h1>Types Of Events</h1></P>
-
-  <div class="w3-quarter">
-    <img src="/event planner/photos/Pre-Wedding-Events.jpg" alt="Popsicle" style="width:25%">
-    <h3>pre wedding events </h3>
     
-  </div>
-  <div class="w3-quarter">
-    <img src="/event planner/photos/istockphoto-1160193557-612x612.jpg" alt="Salmon" style="width: 25%">
-    <h3>office events</h3>
+      <div class="row">
+        <div class="column">
+          <img src="/event planner/photos/92299-date-night-ideas-white-frog-production-date-night-ideas-for-home.jpeg" alt="Snow" style="width:100%"><p><h3 style="color: black;text-align:center;"></style> Dates </h3></p>
+        </div>
+        <div class="column">
+          <img src="/event planner/photos/istockphoto-928580246-612x612.jpg" alt="Forest" style="width:100%"><p><h3 style="color: black;text-align:center;"></style>Office Parties</h3></p>
+        </div>
+        <div class="column">
+          <img src="/event planner/photos/holi-party-decoration-at-home.jpg" alt="Mountains" style="width:100%"><p><h3 style="color: black;text-align:center;"></style>Small Get Together </h3></p>
+        </div>
+      </div>                 
+    </div>
     
-  </div>
-  <div class="w3-quarter">
-    <img src="/event planner/photos/babyshoer.webp" alt="Sandwich" style="width:25%">
-    <h3>Baby showers</h3>
     
-  </div>
-  <div class="w3-quarter">
-    <img src="/event planner/photos/stress-free-birthdays.webp" alt="Croissant" style="width:25%">
-    <h3>Birthday Celebrations </h3>
-   
-</div>
-<div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Chat</h1>
+    </section>       
+    
 
-    <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Type message.." name="msg" required></textarea>
+  </td>
+</tr>
 
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
+  </table>            
+    
+      
+      
+  
 
+</section>       
+<link rel="stylesheet" href="sttyle.css" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="footer, address, phone, icons" />
+ 
+	<title>Footer With Address And Phones</title>
+ 
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="style.css">
+ 
+</head>
+ 
+	<body>
+		<div class="main"> ................</div>
+		<footer class="footer-distributed">
+ 
+			<div class="footer-left">
+ 
+				<h3>Pro<span>Pioneer</span></h3>
+ 
+				<p class="footer-links">
+					<a href="#">Home</a>
+					·
+					<a href="#">Blog</a>
+					·
+					<a href="#">Pricing</a>
+					·
+					<a href="#">About</a>
+					·
+					<a href="#">Faq</a>
+					·
+					<a href="contact us.html">Contact</a>
+				</p>
+ 
+				<p class="footer-company-name">ProPioneer &copy; 2022</p>
+			</div>
+ 
+			<div class="footer-center">
+ 
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>New Delhi </span> India</p>
+				</div>
+ 
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1 555 000000000</p>
+				</div>
+ 
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:support@company.com">propioneer@gmail.com
+</a></p>
+				</div>
+ 
+			</div>
+ 
+			<div class="footer-right">
+ 
+				<p class="footer-company-about">
+					<span>About the company</span>
+					ProPioneer is a perfect stop for event planning.
+				</p>
+ 
+				<div class="footer-icons">
+ 
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-github"></i></a>
+ 
+				</div>
+ 
+			</div>
+ 
+		</footer>
+ <style>body {
+	margin: 0;
+	padding: 0;
+}
+
+}
+footer{
+	position:static;
+	bottom:auto;
+}
+.footer-distributed{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+ 
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+	width: 40%;
+}
+ 
+.footer-distributed h3{
+	color:  #ffffff;
+	font: normal 36px 'Cookie', cursive;
+	margin: 0;
+}
+ 
+.footer-distributed h3 span{
+	color:  #5383d3;
+}
+ 
+ 
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+ 
+.footer-distributed .footer-center{
+	width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+	background-color:  #33383b;
+	color: #ffffff;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+	font-size: 17px;
+	line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+	display: inline-block;
+	color: #ffffff;
+	vertical-align: middle;
+	margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+ 
+.footer-distributed .footer-right{
+	width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+	line-height: 20px;
+	color:  #92999f;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+	display: block;
+	color:  #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+	margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	background-color:  #33383b;
+	border-radius: 2px;
+ 
+	font-size: 20px;
+	color: #ffffff;
+	text-align: center;
+	line-height: 35px;
+ 
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+ 
+ 
+@media (max-width: 880px) {
+ 
+	.footer-distributed{
+		font: bold 14px sans-serif;
+ 
+	}
+ 
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-center,
+	.footer-distributed .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+ 
+	.footer-distributed .footer-center i{
+		margin-left: 0;
+	}
+	.main {
+		line-height: normal;
+		font-size: auto;
+	}
+ 
+}
+</pre></style>
   </body>
 </html>
